@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using DiscordMusicBot.TonyDBDataSetTableAdapters;
-using WebSocketSharp;
 
 namespace DiscordMusicBot
 {
@@ -15,9 +14,8 @@ namespace DiscordMusicBot
             var adaptor = new ReactionImagesTableAdapter();
             var reactionImages = adaptor.GetData();
 
-            var r = new Random();
             List<TonyDBDataSet.ReactionImagesRow> images;
-            if (!description.IsNullOrEmpty())
+            if (!string.IsNullOrEmpty(description))
             {
                 images = reactionImages.Where(i => i.Description.Contains(description)).ToList();
             }
@@ -27,8 +25,7 @@ namespace DiscordMusicBot
             }
             if (images.Count > 0)
             {
-
-                url = images.ElementAt(r.Next(1)).ImageUrl;
+                url = images.GetRandom().ImageUrl;
             }
             
             return url;
