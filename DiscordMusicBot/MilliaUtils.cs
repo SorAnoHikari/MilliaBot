@@ -25,22 +25,22 @@ namespace DiscordMusicBot
 
         public static string AddHitboxImage(string imageUrl, string characterName, string moveName)
         {
-            var character = new CharactersTableAdapter().GetData().FirstOrDefault(c => c.Name.ToLower().Equals(characterName) || c.AlternateName.ToLower().Equals(characterName));
+            var character = new CharactersTableAdapter().GetData().FirstOrDefault(c => c.Name.ToLower().Contains(characterName) || c.AlternateName.ToLower().Equals(characterName));
             if (character != null)
             {
                 var movesAdaptor = new MovesTableAdapter();
-                var existingMove = movesAdaptor.GetData().FirstOrDefault(c => c.MoveName.ToLower().Equals(moveName));
+                var existingMove = movesAdaptor.GetData().FirstOrDefault(c => c.MoveName.ToLower().Equals(moveName) && c.CharacterID == character.Id);
                 if (existingMove != null)
                     return "Move already exists for this char";
                 movesAdaptor.Insert(character.Id, imageUrl, moveName);
                 return "Hitbox added";
             }
-            return "Could find " + characterName;
+            return "Couldn't find " + characterName;
         }
 
         public static string GetHitboxImageUrl(string characterName, string moveName)
         {
-            var character = new CharactersTableAdapter().GetData().FirstOrDefault(c => c.Name.ToLower().Equals(characterName) || c.AlternateName.ToLower().Equals(characterName));
+            var character = new CharactersTableAdapter().GetData().FirstOrDefault(c => c.Name.ToLower().Contains(characterName) || c.AlternateName.ToLower().Equals(characterName));
             if (character != null)
             {
                 var move =
