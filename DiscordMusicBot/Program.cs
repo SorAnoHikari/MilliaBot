@@ -44,7 +44,7 @@ namespace DiscordMusicBot
                     // Handle the recieved message
                     if (recievedMessage.ToLower().Equals("!help") || recievedMessage.ToLower().Equals("help"))
                     {
-                        await client.SendMessage(e.Channel, "Sample commands: !nobully !idk !reaction !addreaction");
+                        await client.SendMessage(e.Channel, "Sample commands: !nobully !idk !reaction !addreaction !hitbox !addhitbox");
                     }
                     if (recievedMessage.ToLower().Equals("nyan"))
                         await client.SendMessage(e.Channel, "nyan~☆");
@@ -69,11 +69,11 @@ namespace DiscordMusicBot
                         var commandList = recievedMessage.Split(' ').ToList();
                         if (commandList.Count == 1)
                         {
-                            await client.SendMessage(e.Channel, "Format is {!reaction} {description (optional)}");
+                            await client.SendMessage(e.Channel, "Format is !reaction description(optional)");
                         }
                         if (commandList.Count > 1)
                         {
-                            var description = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
+                            var description = commandList.Skip(1).Aggregate((i, j) => i + " " + j).ToLower();
                             var url = ReactionUtils.GetReactionImage(description);
                             if (string.IsNullOrEmpty(url))
                                 url = "No images found";
@@ -108,7 +108,69 @@ namespace DiscordMusicBot
                         }
                         else
                         {
-                            await client.SendMessage(e.Channel, "Format is {!addreaction} {url} {description}");
+                            await client.SendMessage(e.Channel, "Format is !addreaction url description");
+                        }
+                    }
+                    if (recievedMessage.ToLower().Contains("!hitbox"))
+                    {
+                        var commandList = recievedMessage.Split(' ').ToList();
+                        if (commandList.Count > 2)
+                        {
+                            var moveName = commandList.Skip(2).Aggregate((i, j) => i + " " + j).ToLower();
+                            var url = MilliaUtils.GetHitboxImageUrl(commandList[1].ToLower(), moveName);
+                            await
+                                client.SendMessage(e.Channel,
+                                    url);
+                        }
+                        else
+                        {
+                            await client.SendMessage(e.Channel, "Format is !hitbox charactername movename");
+                        }
+                    }
+                    if (recievedMessage.ToLower().Contains("!addhitbox"))
+                    {
+                        var commandList = recievedMessage.Split(' ').ToList();
+                        if (commandList.Count > 3)
+                        {
+                            var moveName = commandList.Skip(3).Aggregate((i, j) => i + " " + j).ToLower();
+                            var result = MilliaUtils.AddHitboxImage(commandList[1], commandList[2].ToLower(), moveName.ToLower());
+
+                            await client.SendMessage(e.Channel, result);
+                        }
+                        else
+                        {
+                            await client.SendMessage(e.Channel, "Format is !addhitbox url (character name) (move name)");
+                        }
+                    }
+                    if (recievedMessage.ToLower().Contains("!addcharacter"))
+                    {
+                        var commandList = recievedMessage.Split(' ').ToList();
+                        if (commandList.Count > 1)
+                        {
+                            var charName = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
+                            var characterAdaptor = new CharactersTableAdapter();
+                            var existingCharacter =
+                                characterAdaptor.GetData().FirstOrDefault(c => c.Name.ToLower().Equals(charName));
+                            if (existingCharacter == null)
+                            {
+                                characterAdaptor.Insert(charName, "");
+                                if (characterAdaptor.GetData().FirstOrDefault(c => c.Name.Equals(charName)) != null)
+                                {
+                                    await client.SendMessage(e.Channel, charName + " added");
+                                }
+                                else
+                                {
+                                    await client.SendMessage(e.Channel, "Failed to add character");
+                                }
+                            }
+                            else
+                            {
+                                await client.SendMessage(e.Channel, charName + " already exists");
+                            }
+                        }
+                        else
+                        {
+                            await client.SendMessage(e.Channel, "Format is !addcharacter (character name)");
                         }
                     }
                 }

@@ -17,7 +17,7 @@ namespace DiscordMusicBot
             List<TonyDBDataSet.ReactionImagesRow> images;
             if (!string.IsNullOrEmpty(description))
             {
-                images = reactionImages.Where(i => i.Description.Contains(description)).ToList();
+                images = reactionImages.Where(i => i.Description.ToLower().Contains(description)).ToList();
             }
             else
             {
