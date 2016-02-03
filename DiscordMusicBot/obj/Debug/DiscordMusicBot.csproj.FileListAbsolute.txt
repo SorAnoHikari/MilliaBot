@@ -32,3 +32,4 @@ C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\websocket-sharp.xml
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\obj\Debug\DiscordMusicBot.exe
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\obj\Debug\DiscordMusicBot.pdb
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\obj\Debug\DiscordMusicBot.csprojResolveAssemblyReference.cache

@@ -38,7 +38,7 @@ namespace DiscordMusicBot
             {
                 var recievedMessage = e.Message.Text;
 
-                if (!e.Message.User.Name.ToLower().Equals("milliabot"))
+                if (!(e.Message.User.Name.ToLower().Equals("milliabot") || e.Message.User.Name.ToLower().Equals("robo-millia")))
                 {
 
                     // Handle the recieved message
