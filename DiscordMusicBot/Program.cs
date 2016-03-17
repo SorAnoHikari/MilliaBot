@@ -1,9 +1,15 @@
 ﻿using Discord;
-using Discord.Audio;
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Discord.Audio;
+using Discord.Commands;
+using Discord.Legacy;
+using Discord.Modules;
 using DiscordMusicBot.TonyDBDataSetTableAdapters;
 
 namespace DiscordMusicBot
@@ -19,12 +25,35 @@ namespace DiscordMusicBot
         public static readonly long TL_SOKU_SERVER_ID = 131946718471127041;
         #endregion
 
+        private static bool isPlayingMusic;
+
         static void Main(string[] args)
         {
-            var inoriClient = new DiscordClient();
+            var inoriClient = new DiscordClient(x =>
+            {
+                x.AppName = "MilliaBot";
+                x.MessageCacheSize = 0;
+                x.UsePermissionsCache = true;
+                x.EnablePreUpdateEvents = true;
+                x.LogLevel = LogSeverity.Debug;
+            })
+                .UsingCommands(x =>
+                {
+                    x.AllowMentionPrefix = true;
+                    x.HelpMode = HelpMode.Public;
+                })
+                .UsingModules();
+
+            inoriClient.AddService<AudioService>(new AudioService(new AudioServiceConfigBuilder()
+            {
+                Channels = 2,
+                EnableEncryption = false,
+                EnableMultiserver = true,
+                Bitrate = 128,
+            }));
 
             //Display all log messages in the console
-            inoriClient.LogMessage += (s, e) => Console.WriteLine($"[{e.Severity}] {e.Source}: {e.Message}");
+            inoriClient.Log.Message += (s, e) => Console.WriteLine($"[{e.Severity}] {e.Source}: {e.Message}");
 
             HandleMessage(inoriClient);
 
@@ -44,32 +73,46 @@ namespace DiscordMusicBot
                     // Handle the recieved message
                     if (recievedMessage.ToLower().Equals("!help") || recievedMessage.ToLower().Equals("help"))
                     {
-                        await client.SendMessage(e.Channel, "Sample commands: !nobully !idk !reaction !addreaction !hitbox !addhitbox");
+                        await
+                            e.Channel.SendMessage(
+                                "Sample commands: !nobully !idk !reaction !addreaction !hitbox !addhitbox");
                     }
                     if (recievedMessage.ToLower().Equals("nyan"))
-                        await client.SendMessage(e.Channel, "nyan~☆");
+                        await e.Channel.SendMessage("nyan~☆");
                     if (recievedMessage.ToLower().Equals("!nobully"))
                         await
-                            client.SendMessage(e.Channel,
+                            e.Channel.SendMessage(
                                 "http://36.media.tumblr.com/b9a0de59acdde512065cd345f6b14593/tumblr_nmvjvaqlq31r66h7yo1_500.jpg");
+                    if (recievedMessage.ToLower().Equals("!bully"))
+                        await
+                            e.Channel.SendMessage(
+                                "https://data.desustorage.org/a/image/1436/16/1436163143100.jpg");
                     if (recievedMessage.ToLower().Equals("!herewego"))
                         await
-                            client.SendMessage(e.Channel,
+                            e.Channel.SendMessage(
                                 "http://suptg.thisisnotatrueending.com/archive/32329424/images/1400964390429.jpg");
                     if (recievedMessage.ToLower().Equals("!everyday"))
                         await
-                            client.SendMessage(e.Channel,
+                            e.Channel.SendMessage(
                                 "http://40.media.tumblr.com/5fef7876e1bfe7c744a7c5d8969ea5ba/tumblr_moly86fGRT1swsp86o2_r1_500.jpg");
                     if (recievedMessage.ToLower().Equals("!idk"))
                         await
-                            client.SendMessage(e.Channel,
+                            e.Channel.SendMessage(
                                 "http://s.quickmeme.com/img/45/45cb7c3f84254c6aea385e88ab44149887e56bbb86ba7f7ad62ace9a91a521ef.jpg");
+                    if (recievedMessage.ToLower().Equals("!autism"))
+                        await
+                            e.Channel.SendMessage(
+                                "http://i.imgur.com/bv3ruu8.jpg");
+                    if (recievedMessage.ToLower().Equals("!awoo"))
+                        await
+                            e.Channel.SendMessage(
+                                "http://i.imgur.com/oPVnqGU.png");
                     if (recievedMessage.ToLower().Contains("!reaction"))
                     {
                         var commandList = recievedMessage.Split(' ').ToList();
                         if (commandList.Count == 1)
                         {
-                            await client.SendMessage(e.Channel, "Format is !reaction description(optional)");
+                            await e.Channel.SendMessage( "Format is !reaction description(optional)");
                         }
                         if (commandList.Count > 1)
                         {
@@ -78,7 +121,7 @@ namespace DiscordMusicBot
                             if (string.IsNullOrEmpty(url))
                                 url = "No images found";
                             await
-                                client.SendMessage(e.Channel,
+                                e.Channel.SendMessage(
                                     url);
                         }
                         else
@@ -87,7 +130,7 @@ namespace DiscordMusicBot
                             if (string.IsNullOrEmpty(url))
                                 url = "No images found";
                             await
-                                client.SendMessage(e.Channel,
+                                e.Channel.SendMessage(
                                     url);
                         }
                     }
@@ -108,7 +151,7 @@ namespace DiscordMusicBot
                         }
                         else
                         {
-                            await client.SendMessage(e.Channel, "Format is !addreaction url description");
+                            await e.Channel.SendMessage( "Format is !addreaction url description");
                         }
                     }
                     if (recievedMessage.ToLower().Contains("!hitbox"))
@@ -119,12 +162,12 @@ namespace DiscordMusicBot
                             var moveName = commandList.Skip(2).Aggregate((i, j) => i + " " + j).ToLower();
                             var url = MilliaUtils.GetHitboxImageUrl(commandList[1].ToLower(), moveName);
                             await
-                                client.SendMessage(e.Channel,
+                                e.Channel.SendMessage(
                                     url);
                         }
                         else
                         {
-                            await client.SendMessage(e.Channel, "Format is !hitbox charactername movename");
+                            await e.Channel.SendMessage( "Format is !hitbox charactername movename");
                         }
                     }
                     if (recievedMessage.ToLower().Contains("!addhitbox"))
@@ -135,11 +178,11 @@ namespace DiscordMusicBot
                             var moveName = commandList.Skip(3).Aggregate((i, j) => i + " " + j).ToLower();
                             var result = MilliaUtils.AddHitboxImage(commandList[1], commandList[2].ToLower(), moveName.ToLower());
 
-                            await client.SendMessage(e.Channel, result);
+                            await e.Channel.SendMessage( result);
                         }
                         else
                         {
-                            await client.SendMessage(e.Channel, "Format is !addhitbox url (character name) (move name)");
+                            await e.Channel.SendMessage( "Format is !addhitbox url (character name) (move name)");
                         }
                     }
                     if (recievedMessage.ToLower().Contains("!addcharacter"))
@@ -156,21 +199,126 @@ namespace DiscordMusicBot
                                 characterAdaptor.Insert(charName, "");
                                 if (characterAdaptor.GetData().FirstOrDefault(c => c.Name.Equals(charName)) != null)
                                 {
-                                    await client.SendMessage(e.Channel, charName + " added");
+                                    await e.Channel.SendMessage( charName + " added");
                                 }
                                 else
                                 {
-                                    await client.SendMessage(e.Channel, "Failed to add character");
+                                    await e.Channel.SendMessage( "Failed to add character");
                                 }
                             }
                             else
                             {
-                                await client.SendMessage(e.Channel, charName + " already exists");
+                                await e.Channel.SendMessage( charName + " already exists");
                             }
                         }
                         else
                         {
-                            await client.SendMessage(e.Channel, "Format is !addcharacter (character name)");
+                            await e.Channel.SendMessage( "Format is !addcharacter (character name)");
+                        }
+                    }
+                    if (recievedMessage.ToLower().Contains("!playsong"))
+                    {
+                        var commandList = recievedMessage.Split(' ').ToList();
+                        if (commandList.Count > 1)
+                        {
+                            var songName = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
+                            string file = "../assets/" + songName +".mp3";
+                            var voiceChannel = e.Server.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+
+                            var VoiceClient = await voiceChannel.JoinAudio();
+
+                            var ffmpegProcess = new ProcessStartInfo();
+
+                            ffmpegProcess.FileName = @"C:\FFMPEG\bin\ffmpeg.exe";
+                            ffmpegProcess.Arguments = $"-i {file} -f s16le -ar 48000 -ac 2 pipe:1 -loglevel quiet";
+                            ffmpegProcess.UseShellExecute = false;
+                            ffmpegProcess.RedirectStandardOutput = true;
+
+                            var p = Process.Start(ffmpegProcess);
+
+                            Task.Delay(10000); //give it 2 seconds to get some dataz
+                            int blockSize = 3840; // 1920 for mono
+                            byte[] buffer = new byte[blockSize];
+                            int read;
+
+                            while (true)
+                            {
+                                read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
+                                if (read == 0)
+                                    break; //nothing to read
+                                VoiceClient.Send(buffer, 0, read);
+                            }
+                            VoiceClient.Wait();
+                        }
+                        else
+                        {
+                            await e.Channel.SendMessage("Format is !playsong (songname)");
+                        }
+                    }
+                    if (recievedMessage.ToLower().Contains("!downloadsong"))
+                    {
+                        if (!isPlayingMusic)
+                        {
+                            var commandList = recievedMessage.Split(' ').ToList();
+                            if (commandList.Count > 1)
+                            {
+                                var youtubeUrl = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
+                                var voiceChannel =
+                                    e.Server.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+
+                                var VoiceClient = await voiceChannel.JoinAudio();
+
+                                string strCmdText;
+                                // TODO: Make this better
+                                Process cmdProcess = new Process();
+                                cmdProcess.StartInfo.FileName = "cmd.exe";
+                                cmdProcess.StartInfo.UseShellExecute = false;
+                                cmdProcess.StartInfo.RedirectStandardOutput = true;
+                                cmdProcess.StartInfo.RedirectStandardInput = true;
+                                cmdProcess.Start();
+
+                                //cmdProcess.StandardInput.WriteLine(@"del C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\assets\current.mp3");
+                                cmdProcess.StandardInput.WriteLine(@"del C:\MilliaBot\MilliaBot\assets\current.mp3");
+
+                                //cmdProcess.StartInfo.WorkingDirectory = @"cd C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug";
+                                cmdProcess.StartInfo.WorkingDirectory = @"cd C:\MilliaBot\MilliaBot\Debug";
+
+                                strCmdText = "youtube-dl -o ../assets/current.mp3 --extract-audio --audio-format mp3 " +
+                                             youtubeUrl;
+                                cmdProcess.StandardInput.WriteLine(strCmdText);
+
+                                await Task.Delay(10000);
+
+                                string file = "../assets/current.mp3";
+
+                                var ffmpegProcess = new ProcessStartInfo();
+
+                                ffmpegProcess.FileName = @"C:\FFMPEG\bin\ffmpeg.exe";
+                                ffmpegProcess.Arguments = $"-i {file} -f s16le -ar 48000 -ac 2 pipe:1 -loglevel quiet";
+                                ffmpegProcess.UseShellExecute = false;
+                                ffmpegProcess.RedirectStandardOutput = true;
+
+                                var p = Process.Start(ffmpegProcess);
+
+                                Task.Delay(10000); //give it 2 seconds to get some dataz
+                                int blockSize = 3840; // 1920 for mono
+                                byte[] buffer = new byte[blockSize];
+                                int read;
+                                isPlayingMusic = true;
+                                while (true)
+                                {
+                                    read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
+                                    if (read == 0)
+                                        break; //nothing to read
+                                    VoiceClient.Send(buffer, 0, read);
+                                }
+                                isPlayingMusic = false;
+                                VoiceClient.Wait();
+                            }
+                            else
+                            {
+                                await e.Channel.SendMessage("Format is !downloadsong (Youtube URL)");
+                            }
                         }
                     }
                 }
@@ -180,20 +328,23 @@ namespace DiscordMusicBot
 
         private static async void Connect(DiscordClient inoriClient)
         {
-            inoriClient.Run(async () =>
+            inoriClient.ExecuteAndWait(async () =>
             {
                 while (true)
                 {
                     try
                     {
                         await inoriClient.Connect(EMAIL, PASSWORD);
-                        await inoriClient.SetGame(1);
-                        
+                        inoriClient.SetGame("Guilty Gear Xrd -Revelator-");
+                        var ottawaAnimeCrew = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("Ottawa Anime Crew"));
+                        var jamSession = ottawaAnimeCrew.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+                        await jamSession.JoinAudio();
+
                         break;
                     }
                     catch (Exception ex)
                     {
-                        inoriClient.LogMessage += (s, e) => Console.WriteLine(String.Concat("Login Failed", ex));
+                        inoriClient.Log.Message += (s, e) => Console.WriteLine(String.Concat("Login Failed", ex));
                         await Task.Delay(inoriClient.Config.FailedReconnectDelay);
                     }
                 }
