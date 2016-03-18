@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Discord.Audio;
 using Discord.Commands;
-using Discord.Legacy;
 using Discord.Modules;
 using DiscordMusicBot.TonyDBDataSetTableAdapters;
 
@@ -25,7 +24,8 @@ namespace DiscordMusicBot
         public static readonly long TL_SOKU_SERVER_ID = 131946718471127041;
         #endregion
 
-        private static bool isPlayingMusic;
+        private static bool IsPlayingMusic;
+        private static Server OttawaAnimeCrewServer { get; set; }
 
         static void Main(string[] args)
         {
@@ -223,32 +223,11 @@ namespace DiscordMusicBot
                         {
                             var songName = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
                             string file = "../assets/" + songName +".mp3";
-                            var voiceChannel = e.Server.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+                            var voiceChannel = OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
 
                             var VoiceClient = await voiceChannel.JoinAudio();
 
-                            var ffmpegProcess = new ProcessStartInfo();
-
-                            ffmpegProcess.FileName = @"C:\FFMPEG\bin\ffmpeg.exe";
-                            ffmpegProcess.Arguments = $"-i {file} -f s16le -ar 48000 -ac 2 pipe:1 -loglevel quiet";
-                            ffmpegProcess.UseShellExecute = false;
-                            ffmpegProcess.RedirectStandardOutput = true;
-
-                            var p = Process.Start(ffmpegProcess);
-
-                            Task.Delay(10000); //give it 2 seconds to get some dataz
-                            int blockSize = 3840; // 1920 for mono
-                            byte[] buffer = new byte[blockSize];
-                            int read;
-
-                            while (true)
-                            {
-                                read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
-                                if (read == 0)
-                                    break; //nothing to read
-                                VoiceClient.Send(buffer, 0, read);
-                            }
-                            VoiceClient.Wait();
+                            await MusicService.PlayMusic(VoiceClient, file);
                         }
                         else
                         {
@@ -257,16 +236,17 @@ namespace DiscordMusicBot
                     }
                     if (recievedMessage.ToLower().Contains("!downloadsong"))
                     {
-                        if (!isPlayingMusic)
+                        if (!IsPlayingMusic)
                         {
+                            IsPlayingMusic = true;
                             var commandList = recievedMessage.Split(' ').ToList();
                             if (commandList.Count > 1)
                             {
                                 var youtubeUrl = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
                                 var voiceChannel =
-                                    e.Server.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+                                    OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
 
-                                var VoiceClient = await voiceChannel.JoinAudio();
+                                var voiceClient = await voiceChannel.JoinAudio();
 
                                 string strCmdText;
                                 // TODO: Make this better
@@ -291,29 +271,9 @@ namespace DiscordMusicBot
 
                                 string file = "../assets/current.mp3";
 
-                                var ffmpegProcess = new ProcessStartInfo();
+                                MusicService.PlayMusic(voiceClient, file);
 
-                                ffmpegProcess.FileName = @"C:\FFMPEG\bin\ffmpeg.exe";
-                                ffmpegProcess.Arguments = $"-i {file} -f s16le -ar 48000 -ac 2 pipe:1 -loglevel quiet";
-                                ffmpegProcess.UseShellExecute = false;
-                                ffmpegProcess.RedirectStandardOutput = true;
-
-                                var p = Process.Start(ffmpegProcess);
-
-                                Task.Delay(10000); //give it 2 seconds to get some dataz
-                                int blockSize = 3840; // 1920 for mono
-                                byte[] buffer = new byte[blockSize];
-                                int read;
-                                isPlayingMusic = true;
-                                while (true)
-                                {
-                                    read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
-                                    if (read == 0)
-                                        break; //nothing to read
-                                    VoiceClient.Send(buffer, 0, read);
-                                }
-                                isPlayingMusic = false;
-                                VoiceClient.Wait();
+                                IsPlayingMusic = false;
                             }
                             else
                             {
@@ -336,8 +296,8 @@ namespace DiscordMusicBot
                     {
                         await inoriClient.Connect(EMAIL, PASSWORD);
                         inoriClient.SetGame("Guilty Gear Xrd -Revelator-");
-                        var ottawaAnimeCrew = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("Ottawa Anime Crew"));
-                        var jamSession = ottawaAnimeCrew.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
+                        OttawaAnimeCrewServer = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("Ottawa Anime Crew"));
+                        var jamSession = OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
                         await jamSession.JoinAudio();
 
                         break;

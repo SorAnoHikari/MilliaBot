@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Discord;
 using YoutubeExtractor;
+using Discord.Audio;
 
 namespace DiscordMusicBot
 {
-    public static class YoutubeServices
+    public static class MusicService
     {
         public static string SaveVideoToDisk(string link)
         {
@@ -46,6 +49,31 @@ namespace DiscordMusicBot
             audioDownloader.Execute();
 
             return video.Title;
+        }
+
+        public static async Task PlayMusic(IAudioClient voiceClient, string file)
+        {
+            var ffmpegProcess = new ProcessStartInfo();
+
+            ffmpegProcess.FileName = @"C:\FFMPEG\bin\ffmpeg.exe";
+            ffmpegProcess.Arguments = $"-i {file} -f s16le -ar 48000 -ac 2 pipe:1 -loglevel quiet";
+            ffmpegProcess.UseShellExecute = false;
+            ffmpegProcess.RedirectStandardOutput = true;
+
+            var p = Process.Start(ffmpegProcess);
+
+            await Task.Delay(1000); //give it 2 seconds to get some dataz
+            int blockSize = 3840; // 1920 for mono
+            byte[] buffer = new byte[blockSize];
+            int read;
+            while (true)
+            {
+                read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
+                if (read == 0)
+                    break; //nothing to read
+                voiceClient.Send(buffer, 0, read);
+            }
+            voiceClient.Wait();
         }
     }
 }
