@@ -45,3 +45,4 @@ C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\Discord.Net.Modules.xml
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\YoutubeExtractor.dll
 C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\YoutubeExtractor.xml
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\obj\Debug\DiscordMusicBot.csprojResolveAssemblyReference.cache
