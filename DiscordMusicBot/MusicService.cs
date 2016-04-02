@@ -13,42 +13,46 @@ namespace DiscordMusicBot
 {
     public static class MusicService
     {
-        public static string SaveVideoToDisk(string link)
+        public static async Task ExecutePlaylist(IAudioClient voiceClient, List<string> playlist, Channel jamSessionChatChannel)
         {
-            IEnumerable<VideoInfo> videoInfos = DownloadUrlResolver.GetDownloadUrls(link, false);
-            
-            VideoInfo video = videoInfos
-                .Where(info => info.CanExtractAudio)
-                .OrderByDescending(info => info.AudioBitrate)
-                .First();
-
-            /*
-             * If the video has a decrypted signature, decipher it
-             */
-            if (video.RequiresDecryption)
+            while (playlist.Count > 0)
             {
-                DownloadUrlResolver.DecryptDownloadUrl(video);
+                string strCmdText;
+                // TODO: Make this better
+                Process cmdProcess = new Process();
+                cmdProcess.StartInfo.FileName = "cmd.exe";
+                cmdProcess.StartInfo.UseShellExecute = false;
+                cmdProcess.StartInfo.RedirectStandardOutput = true;
+                cmdProcess.StartInfo.RedirectStandardInput = true;
+                cmdProcess.Start();
+
+                /* Change for local/prod */
+                //cmdProcess.StandardInput.WriteLine(@"del C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\assets\current.mp3");
+                cmdProcess.StandardInput.WriteLine(@"del C:\MilliaBot\MilliaBot\assets\current.mp3");
+
+                //cmdProcess.StartInfo.WorkingDirectory = @"cd C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug";
+                cmdProcess.StartInfo.WorkingDirectory = @"cd C:\MilliaBot\MilliaBot\Debug";
+
+                strCmdText =
+                    "youtube-dl -o ../assets/current.mp3 --extract-audio --audio-format mp3 " +
+                    playlist.First();
+                cmdProcess.StandardInput.WriteLine(strCmdText);
+
+                await Task.Delay(5555);
+
+                string file = "../assets/current.mp3";
+
+                await jamSessionChatChannel.SendMessage("Now playing: " + playlist.First());
+                if (playlist.Count > 1)
+                {
+                    await jamSessionChatChannel.SendMessage("Songs left in the playlist: " + playlist.Count);
+                }
+
+                await PlayMusic(voiceClient, file);
+
+                if (playlist.Count > 0)
+                    playlist.RemoveAt(0);
             }
-
-            /*
-             * Create the audio downloader.
-             * The first argument is the video where the audio should be extracted from.
-             * The second argument is the path to save the audio file.
-             */
-            var audioDownloader = new AudioDownloader(video, Path.Combine("../assets", video.Title + video.AudioExtension));
-
-            // Register the progress events. We treat the download progress as 85% of the progress and the extraction progress only as 15% of the progress,
-            // because the download will take much longer than the audio extraction.
-            audioDownloader.DownloadProgressChanged += (sender, args) => Console.WriteLine(args.ProgressPercentage * 0.85);
-            audioDownloader.AudioExtractionProgressChanged += (sender, args) => Console.WriteLine(85 + args.ProgressPercentage * 0.15);
-
-            /*
-             * Execute the audio downloader.
-             * For GUI applications note, that this method runs synchronously.
-             */
-            audioDownloader.Execute();
-
-            return video.Title;
         }
 
         public static async Task PlayMusic(IAudioClient voiceClient, string file)
@@ -66,11 +70,15 @@ namespace DiscordMusicBot
             int blockSize = 3840; // 1920 for mono
             byte[] buffer = new byte[blockSize];
             int read;
-            while (true)
+            while (!MilliaBot.IsSkipSong)
             {
                 read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
-                if (read == 0)
+                if (read == 0 || MilliaBot.IsSkipSong)
+                {
+                    MilliaBot.IsSkipSong = false;
+                    await Task.Delay(1000);
                     break; //nothing to read
+                }
                 voiceClient.Send(buffer, 0, read);
             }
             voiceClient.Wait();

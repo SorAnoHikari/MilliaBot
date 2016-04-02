@@ -4,11 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DiscordMusicBot.TonyDBDataSetTableAdapters;
+using NHunspell;
 
 namespace DiscordMusicBot
 {
     public static class MilliaUtils
     {
+        static Random RNG = new Random();
+        public static List<string> EightBallResponses = new List<string>
+        {
+            "It is certain",
+            "It is decidedly so",
+            "Without a doubt",
+            "Yes, definitely",
+            "You may rely on it",
+            "As I see it, yes",
+            "Most likely",
+            "Outlook good",
+            "Yes",
+            "Signs point to yes",
+            "Reply hazy, try again",
+            "Ask again later",
+            "Better not tell you now",
+            "Cannot predict now",
+            "Concentrate and ask again",
+            "Don't count on it",
+            "My reply is no",
+            "My sources say no",
+            "Outlook not so good",
+            "Very doubtful"
+        }; 
         public static T GetRandom<T>(this IEnumerable<T> enumerable)
         {
             if (enumerable == null)
@@ -57,5 +82,55 @@ namespace DiscordMusicBot
             }
             return "Character not found";
         }
+
+        public static string GetEightBallResponse()
+        {
+            int r = RNG.Next(EightBallResponses.Count);
+            return EightBallResponses[r];
+        }
+
+        public static string GetAutoCorrectedSentence(string line)
+        {
+            string correctedSentence = "";
+            using (Hunspell hunspell = new Hunspell("en_us.aff", "en_us.dic"))
+            {
+                var wordTokens = line.Split(' ');
+                foreach (var word in wordTokens)
+                {
+                    var correct = hunspell.Spell(word);
+                    if (correct)
+                    {
+                        correctedSentence += word + " ";
+                    }
+                    else
+                    {
+                        correctedSentence += hunspell.Suggest(word).First() + " ";
+                    }
+                }
+            }
+            return correctedSentence;
+        }
+
+        public static string GetCommandLink(string commandName)
+        {
+            string url = "";
+
+            var adaptor = new CommandsTableAdapter();
+            var reactionImages = adaptor.GetData();
+
+            List<TonyDBDataSet.CommandsRow> commands;
+            if (!string.IsNullOrEmpty(commandName))
+            {
+                commands = reactionImages.Where(i => i.Name.ToLower().Contains(commandName)).ToList();
+
+                if (commands.Count > 0)
+                {
+                    url = commands.GetRandom().Value;
+                }
+            }
+
+            return url;
+        }
     }
+
 }

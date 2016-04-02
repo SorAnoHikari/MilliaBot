@@ -58,3 +58,11 @@ C:\Users\TonyC\Desktop\Misc\MilliaBot\MilliaBot\DiscordMusicBot\bin\Debug\Nito.A
 C:\Users\TonyC\Desktop\Misc\MilliaBot\MilliaBot\DiscordMusicBot\bin\Debug\Nito.AsyncEx.Concurrent.xml
 C:\Users\TonyC\Desktop\Misc\MilliaBot\MilliaBot\DiscordMusicBot\bin\Debug\Nito.AsyncEx.Enlightenment.xml
 C:\Users\TonyC\Desktop\Misc\MilliaBot\MilliaBot\DiscordMusicBot\bin\Debug\YoutubeExtractor.xml
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\Hunspellx64.dll
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\Hunspellx86.dll
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\NHunspell.dll
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\Debug\NHunspell.pdb
+C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\obj\Debug\DiscordMusicBot.csprojResolveAssemblyReference.cache
