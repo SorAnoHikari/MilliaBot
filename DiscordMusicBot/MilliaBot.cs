@@ -28,6 +28,9 @@ namespace DiscordMusicBot
 
         private static bool IsPlayingMusic;
         private static Server OttawaAnimeCrewServer { get; set; }
+        private static Server TLSokuServer { get; set; }
+        private static Channel VoiceChannel { get; set; }
+        private static Channel MusicChatChannel { get; set; }
 
         public static List<string> Playlist { get; set; }
         public static bool IsSkipSong { get; set; }
@@ -251,11 +254,10 @@ namespace DiscordMusicBot
                         if (commandList.Count > 1)
                         {
                             var youtubeUrl = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
-                            var voiceChannel =
-                                OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
-                            var chatChannel =
-                                OttawaAnimeCrewServer.TextChannels.FirstOrDefault(c => c.Name.Equals("setplay-corner"));
-                            var voiceClient = await voiceChannel.JoinAudio();
+                            var channelName = "Koromo's Room";
+                            var koromos_room = "twitch_chat";
+                            // Change for servers
+                            var voiceClient = await VoiceChannel.JoinAudio();
 
                             if (!IsPlayingMusic)
                             {
@@ -263,7 +265,7 @@ namespace DiscordMusicBot
 
                                 Playlist.Add(youtubeUrl);
 
-                                await MusicService.ExecutePlaylist(voiceClient, Playlist, chatChannel);
+                                await MusicService.ExecutePlaylist(voiceClient, Playlist, MusicChatChannel);
 
                                 IsPlayingMusic = false;
                             }
@@ -353,9 +355,13 @@ namespace DiscordMusicBot
                     {
                         await inoriClient.Connect(EMAIL, PASSWORD);
                         inoriClient.SetGame("Guilty Gear Xrd -Revelator-");
+                        var channelName = "Koromo's Room";
+                        var textChannelName = "Koromos_room";
                         OttawaAnimeCrewServer = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("Ottawa Anime Crew"));
-                        var jamSession = OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals("Jam Session"));
-                        await jamSession.JoinAudio();
+                        TLSokuServer = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("TL Soku"));
+                        VoiceChannel = TLSokuServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals(channelName));
+                        MusicChatChannel = TLSokuServer.TextChannels.FirstOrDefault(v => v.Name.Equals(textChannelName));
+                        await VoiceChannel.JoinAudio();
 
                         break;
                     }
