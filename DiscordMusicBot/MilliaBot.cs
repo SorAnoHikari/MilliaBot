@@ -88,30 +88,6 @@ namespace DiscordMusicBot
                     }
                     else if (recievedMessage.ToLower().Equals("nyan"))
                         await e.Channel.SendMessage("nyan~☆");
-                    else if (recievedMessage.ToLower().Equals("!nobully"))
-                        await
-                            e.Channel.SendMessage(
-                                "http://36.media.tumblr.com/b9a0de59acdde512065cd345f6b14593/tumblr_nmvjvaqlq31r66h7yo1_500.jpg");
-                    else if (recievedMessage.ToLower().Equals("!bully"))
-                        await
-                            e.Channel.SendMessage(
-                                "https://data.desustorage.org/a/image/1436/16/1436163143100.jpg");
-                    else if (recievedMessage.ToLower().Equals("!herewego"))
-                        await
-                            e.Channel.SendMessage(
-                                "http://suptg.thisisnotatrueending.com/archive/32329424/images/1400964390429.jpg");
-                    else if (recievedMessage.ToLower().Equals("!everyday"))
-                        await
-                            e.Channel.SendMessage(
-                                "http://40.media.tumblr.com/5fef7876e1bfe7c744a7c5d8969ea5ba/tumblr_moly86fGRT1swsp86o2_r1_500.jpg");
-                    else if (recievedMessage.ToLower().Equals("!idk"))
-                        await
-                            e.Channel.SendMessage(
-                                "http://s.quickmeme.com/img/45/45cb7c3f84254c6aea385e88ab44149887e56bbb86ba7f7ad62ace9a91a521ef.jpg");
-                    else if (recievedMessage.ToLower().Equals("!autism"))
-                        await
-                            e.Channel.SendMessage(
-                                "http://i.imgur.com/bv3ruu8.jpg");
                     else if (recievedMessage.ToLower().Equals("!awoo"))
                         await
                             e.Channel.SendMessage(
@@ -331,6 +307,32 @@ namespace DiscordMusicBot
                             await e.Channel.SendMessage("Format is !add (URL)");
                         }
                     }
+                    else if (recievedMessage.ToLower().StartsWith("!avatar"))
+                    {
+                        var commandList = recievedMessage.Split(' ').ToList();
+                        if (commandList.Count > 1)
+                        {
+                            var name = commandList.Skip(1).Aggregate((i, j) => i + " " + j);
+                            var user = e.Server.Users.FirstOrDefault(u => u.Name.ToLower().Equals(name.ToLower()));
+                            if (user != null)
+                            {
+                                if (user.AvatarUrl != null)
+                                    await e.Channel.SendMessage(user.AvatarUrl);
+                            }
+                            else
+                            {
+                                await e.Channel.SendMessage("I don't see that user.");
+                            }
+                        }
+                    }
+                    else if (recievedMessage.ToLower().StartsWith("!setgame"))
+                    {
+                        client.SetGame("Guilty Gear Xrd -Revelator-");
+                    }
+                    else if (recievedMessage.ToLower().StartsWith("!item"))
+                    {
+                        await e.Channel.SendMessage(MilliaUtils.GetFaustItem());
+                    }
                     // Must be last
                     else if (recievedMessage.StartsWith("!"))
                     {
@@ -355,11 +357,11 @@ namespace DiscordMusicBot
                     {
                         await inoriClient.Connect(EMAIL, PASSWORD);
                         inoriClient.SetGame("Guilty Gear Xrd -Revelator-");
-                        var channelName = "Koromo's Room";
-                        var textChannelName = "Koromos_room";
+                        var channelName = "Jam Session";
+                        var textChannelName = "jam-session";
                         OttawaAnimeCrewServer = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("Ottawa Anime Crew"));
                         TLSokuServer = inoriClient.Servers.FirstOrDefault(s => s.Name.Equals("TL Soku"));
-                        VoiceChannel = TLSokuServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals(channelName));
+                        VoiceChannel = OttawaAnimeCrewServer.VoiceChannels.FirstOrDefault(v => v.Name.Equals(channelName));
                         MusicChatChannel = TLSokuServer.TextChannels.FirstOrDefault(v => v.Name.Equals(textChannelName));
                         await VoiceChannel.JoinAudio();
 

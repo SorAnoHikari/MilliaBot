@@ -11,6 +11,22 @@ namespace DiscordMusicBot
     public static class MilliaUtils
     {
         static Random RNG = new Random();
+
+        public enum FaustItem
+        {
+            Helium,
+            Platform,
+            Weight,
+            BlackHole,
+            Meteor,
+            Oil,
+            Food,
+            Poison,
+            Bomb,
+            Hammer,
+            MiniFaust
+        }
+
         public static List<string> EightBallResponses = new List<string>
         {
             "It is certain",
@@ -33,7 +49,22 @@ namespace DiscordMusicBot
             "My sources say no",
             "Outlook not so good",
             "Very doubtful"
-        }; 
+        };
+
+        public static List<KeyValuePair<string, double>> ItemList = new List<KeyValuePair<string, double>>
+        {
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/1/13/GGXRD_Faust_BlackHole.png", 4),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/5/59/GGXRD_Faust_Bomb.png", 18.4),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/a/ad/GGXRD_Faust_Donut.png", 36.3),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/6/66/GGXRD_Faust_Hammer.png", 52.9),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/9/98/GGXRD_Faust_HeliumGas.png", 55.3),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/8/89/GGXRD_Faust_Meteors.png", 60.8),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/5/50/GGXRD_Faust_ChibiFaust.png", 77.7),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/f/f6/GGXRD_Faust_DrumCan.png", 83.7),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/7/7b/GGXRD_Faust_JumpPad.png", 87.3),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/a/aa/GGXRD_Faust_Poison.png", 96.3),
+            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/8/83/GGXRD_Faust_100TonWeight.png", 100)
+        };
         public static T GetRandom<T>(this IEnumerable<T> enumerable)
         {
             if (enumerable == null)
@@ -89,6 +120,22 @@ namespace DiscordMusicBot
             return EightBallResponses[r];
         }
 
+        public static string GetFaustItem()
+        {
+            Random r = new Random();
+            double itemRoll = r.NextDouble() * 100;
+            double cumulative = 0.0;
+            for (int i = 0; i < ItemList.Count; i++)
+            {
+                cumulative += ItemList[i].Value;
+                if (itemRoll < cumulative)
+                {
+                    return ItemList[i].Key;
+                }
+            }
+            return ItemList[3].Key;
+        }
+
         public static string GetAutoCorrectedSentence(string line)
         {
             string correctedSentence = "";
@@ -121,7 +168,9 @@ namespace DiscordMusicBot
             List<TonyDBDataSet.CommandsRow> commands;
             if (!string.IsNullOrEmpty(commandName))
             {
-                commands = reactionImages.Where(i => i.Name.ToLower().Contains(commandName)).ToList();
+                commands = reactionImages.Where(i => i.Name.ToLower().Equals(commandName)).ToList();
+                if (!commands.Any())
+                    commands = reactionImages.Where(i => i.Name.ToLower().Contains(commandName)).ToList();
 
                 if (commands.Count > 0)
                 {

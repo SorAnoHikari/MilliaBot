@@ -23,11 +23,14 @@ namespace DiscordMusicBot
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
 
             var keepOnRockinUrl = @"http://www.keeponrock.in?character1=" + GetCharAlias(character1);
+
             if (!String.IsNullOrEmpty(character2))
             {
                 character2 = GetCharAlias(character2);
                 keepOnRockinUrl += "&character1=" + character2;
             }
+
+            return keepOnRockinUrl;
 
             Stream data = client.OpenRead(keepOnRockinUrl);
 
