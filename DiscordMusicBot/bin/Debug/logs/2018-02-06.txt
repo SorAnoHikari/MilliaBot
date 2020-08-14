@@ -1,0 +1,109 @@
+03:46:02 [Info] Discord: Discord.Net v1.0.2 (API v6)
+03:46:02 [Verbose] Rest: GET voice/regions: 323.69 ms
+03:46:02 [Info] Gateway: Connecting
+03:46:02 [Debug] Gateway: Connecting ApiClient
+03:46:02 [Debug] Command: Successfully built 0 modules.
+03:46:02 [Verbose] Rest: GET gateway: 60.39 ms
+03:46:03 [Debug] Gateway: Identifying
+03:46:03 [Debug] Gateway: Sent Identify
+03:46:03 [Debug] Gateway: Received Hello
+03:46:03 [Debug] Gateway: Heartbeat Started
+03:46:03 [Debug] Gateway: Sent Heartbeat
+03:46:03 [Debug] Gateway: Received Dispatch (READY)
+03:46:03 [Debug] Gateway: GuildDownloader Started
+03:46:03 [Debug] Gateway: Sending Status
+03:46:03 [Debug] Gateway: Sent StatusUpdate
+03:46:03 [Info] Gateway: Connected
+03:46:03 [Debug] Gateway: Raising Event
+03:46:03 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:46:03 [Verbose] Gateway: Connected to TL Soku
+03:46:03 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:46:03 [Verbose] Gateway: Connected to Ottawa Anime Crew
+03:46:03 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:46:03 [Verbose] Gateway: Connected to Haunted Mansion
+03:46:03 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:46:03 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+03:46:03 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:46:03 [Verbose] Gateway: Connected to Ottawa Traditional Fighters
+03:46:03 [Debug] Gateway: Received HeartbeatAck
+03:46:03 [Debug] Gateway: Latency = 219 ms
+03:46:03 [Debug] Gateway: GuildDownloader Stopped
+03:46:03 [Info] Gateway: Ready
+03:46:13 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:46:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:46:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:46:15 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:46:18 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:46:33 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+03:46:33 [Warning] Gateway: Discord.Net.HttpException: The server responded with error 403: Forbidden
+   at Discord.Net.Queue.RequestBucket.<SendAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Net.Queue.RequestQueue.<SendAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendInternalAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendAsync>d__51.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<AddRoleAsync>d__73.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Rest.UserHelper.<AddRolesAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DiscordMusicBot.DiscordEventHandlers.<OnMessageReceivedAsync>d__10.MoveNext() in C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\DiscordEventHandlers.cs:line 73
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.EventExtensions.<InvokeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__128.MoveNext()
+03:46:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:46:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:46:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+11:59:33 [Info] Discord: Discord.Net v1.0.2 (API v6)
+11:59:33 [Verbose] Rest: GET voice/regions: 350.73 ms
+11:59:33 [Info] Gateway: Connecting
+11:59:33 [Debug] Gateway: Connecting ApiClient
+11:59:34 [Debug] Command: Successfully built 0 modules.
+11:59:34 [Verbose] Rest: GET gateway: 514.09 ms
+11:59:35 [Debug] Gateway: Identifying
+11:59:35 [Debug] Gateway: Sent Identify
+11:59:35 [Debug] Gateway: Received Hello
+11:59:35 [Debug] Gateway: Heartbeat Started
+11:59:35 [Debug] Gateway: Sent Heartbeat
+11:59:35 [Debug] Gateway: Received Dispatch (READY)
+11:59:35 [Debug] Gateway: GuildDownloader Started
+11:59:35 [Debug] Gateway: Sending Status
+11:59:35 [Debug] Gateway: Sent StatusUpdate
+11:59:35 [Info] Gateway: Connected
+11:59:35 [Debug] Gateway: Raising Event
+11:59:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+11:59:35 [Verbose] Gateway: Connected to Ottawa Anime Crew
+11:59:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+11:59:35 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+11:59:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+11:59:35 [Verbose] Gateway: Connected to Ottawa Traditional Fighters
+11:59:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+11:59:35 [Verbose] Gateway: Connected to TL Soku
+11:59:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+11:59:35 [Verbose] Gateway: Connected to Haunted Mansion
+11:59:35 [Debug] Gateway: Received HeartbeatAck
+11:59:35 [Debug] Gateway: Latency = 469 ms
+11:59:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+11:59:36 [Debug] Gateway: GuildDownloader Stopped
+11:59:36 [Info] Gateway: Ready
+11:59:50 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+11:59:50 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)

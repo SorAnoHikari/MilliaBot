@@ -1,0 +1,205 @@
+12:07:14 [Info] Discord: Discord.Net v1.0.2 (API v6)
+12:07:14 [Verbose] Rest: GET voice/regions: 291.37 ms
+12:07:15 [Info] Gateway: Connecting
+12:07:15 [Debug] Gateway: Connecting ApiClient
+12:07:15 [Debug] Command: Successfully built 0 modules.
+12:07:15 [Verbose] Rest: GET gateway: 34.84 ms
+12:07:15 [Debug] Gateway: Identifying
+12:07:15 [Debug] Gateway: Sent Identify
+12:07:15 [Debug] Gateway: Received Hello
+12:07:15 [Debug] Gateway: Heartbeat Started
+12:07:15 [Debug] Gateway: Sent Heartbeat
+12:07:15 [Debug] Gateway: Received Dispatch (READY)
+12:07:15 [Debug] Gateway: GuildDownloader Started
+12:07:15 [Debug] Gateway: GuildDownloader Stopped
+12:07:15 [Debug] Gateway: Sending Status
+12:07:15 [Info] Gateway: Ready
+12:07:15 [Debug] Gateway: Sent StatusUpdate
+12:07:15 [Info] Gateway: Connected
+12:07:15 [Debug] Gateway: Raising Event
+12:07:15 [Debug] Gateway: Received HeartbeatAck
+12:07:15 [Debug] Gateway: Latency = 78 ms
+12:07:56 [Debug] Gateway: Sent Heartbeat
+12:07:56 [Debug] Gateway: Received HeartbeatAck
+12:07:56 [Debug] Gateway: Latency = 62 ms
+12:08:38 [Debug] Gateway: Sent Heartbeat
+12:08:38 [Debug] Gateway: Received HeartbeatAck
+12:08:38 [Debug] Gateway: Latency = 63 ms
+12:09:19 [Debug] Gateway: Sent Heartbeat
+12:09:19 [Debug] Gateway: Received HeartbeatAck
+12:09:19 [Debug] Gateway: Latency = 109 ms
+12:09:58 [Debug] Gateway: Received Dispatch (GUILD_CREATE)
+12:09:58 [Info] Gateway: Joined Ottawa Anime Crew
+12:10:00 [Debug] Gateway: Sent Heartbeat
+12:10:00 [Debug] Gateway: Received HeartbeatAck
+12:10:00 [Debug] Gateway: Latency = 79 ms
+12:10:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:10:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:10:15 [Debug] Gateway: Received Dispatch (GUILD_CREATE)
+12:10:15 [Info] Gateway: Joined Ottawa Anime Crew (After hours)
+12:10:23 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+12:10:23 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+12:10:24 [Debug] Gateway: Received Dispatch (TYPING_START)
+12:10:28 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+12:10:28 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+12:10:41 [Debug] Gateway: Sent Heartbeat
+12:10:41 [Debug] Gateway: Received HeartbeatAck
+12:10:41 [Debug] Gateway: Latency = 79 ms
+12:10:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:10:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:17:21 [Info] Discord: Discord.Net v1.0.2 (API v6)
+12:17:22 [Verbose] Rest: GET voice/regions: 287.02 ms
+12:17:22 [Info] Gateway: Connecting
+12:17:22 [Debug] Gateway: Connecting ApiClient
+12:17:22 [Debug] Command: Successfully built 0 modules.
+12:17:22 [Verbose] Rest: GET gateway: 36.58 ms
+12:17:22 [Debug] Gateway: Identifying
+12:17:22 [Debug] Gateway: Sent Identify
+12:17:22 [Debug] Gateway: Received Hello
+12:17:22 [Debug] Gateway: Heartbeat Started
+12:17:22 [Debug] Gateway: Sent Heartbeat
+12:17:22 [Debug] Gateway: Received Dispatch (READY)
+12:17:22 [Debug] Gateway: GuildDownloader Started
+12:17:22 [Debug] Gateway: Sending Status
+12:17:22 [Debug] Gateway: Sent StatusUpdate
+12:17:22 [Info] Gateway: Connected
+12:17:22 [Debug] Gateway: Raising Event
+12:17:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:17:22 [Verbose] Gateway: Connected to TL Soku
+12:17:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:17:22 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+12:17:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:17:22 [Verbose] Gateway: Connected to Ottawa Anime Crew
+12:17:22 [Debug] Gateway: Received HeartbeatAck
+12:17:22 [Debug] Gateway: Latency = 218 ms
+12:17:23 [Debug] Gateway: GuildDownloader Stopped
+12:17:23 [Info] Gateway: Ready
+12:17:25 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:17:27 [Debug] Gateway: Received Dispatch (TYPING_START)
+12:17:32 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+12:17:32 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+12:18:03 [Debug] Gateway: Sent Heartbeat
+12:18:03 [Debug] Gateway: Received HeartbeatAck
+12:18:03 [Debug] Gateway: Latency = 63 ms
+12:18:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:18:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:18:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+12:20:08 [Info] Discord: Discord.Net v1.0.2 (API v6)
+12:20:08 [Verbose] Rest: GET voice/regions: 337.4 ms
+12:20:09 [Info] Gateway: Connecting
+12:20:09 [Debug] Command: Successfully built 0 modules.
+12:20:09 [Debug] Gateway: Connecting ApiClient
+12:20:09 [Verbose] Rest: GET gateway: 32.94 ms
+12:20:09 [Debug] Gateway: Identifying
+12:20:09 [Debug] Gateway: Sent Identify
+12:20:09 [Debug] Gateway: Received Hello
+12:20:09 [Debug] Gateway: Heartbeat Started
+12:20:09 [Debug] Gateway: Sent Heartbeat
+12:20:09 [Debug] Gateway: Received Dispatch (READY)
+12:20:09 [Debug] Gateway: GuildDownloader Started
+12:20:09 [Debug] Gateway: Sending Status
+12:20:09 [Debug] Gateway: Sent StatusUpdate
+12:20:09 [Info] Gateway: Connected
+12:20:09 [Debug] Gateway: Raising Event
+12:20:09 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:20:09 [Verbose] Gateway: Connected to TL Soku
+12:20:09 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:20:09 [Verbose] Gateway: Connected to Ottawa Anime Crew
+12:20:09 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+12:20:09 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+12:20:09 [Debug] Gateway: Received HeartbeatAck
+12:20:09 [Debug] Gateway: Latency = 203 ms
+12:20:10 [Debug] Gateway: GuildDownloader Stopped
+12:20:10 [Info] Gateway: Ready
+12:20:15 [Debug] Gateway: Received Dispatch (TYPING_START)
+12:20:21 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+12:20:21 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+12:20:24 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+12:20:24 [Verbose] Rest: POST channels/388482413644218370/messages: 113.74 ms
+01:05:10 [Info] Discord: Discord.Net v1.0.2 (API v6)
+01:05:10 [Verbose] Rest: GET voice/regions: 449.04 ms
+01:05:10 [Info] Gateway: Connecting
+01:05:10 [Debug] Command: Successfully built 0 modules.
+01:05:10 [Debug] Gateway: Connecting ApiClient
+01:05:10 [Verbose] Rest: GET gateway: 45.88 ms
+01:05:11 [Debug] Gateway: Identifying
+01:05:11 [Debug] Gateway: Sent Identify
+01:05:11 [Debug] Gateway: Received Hello
+01:05:11 [Debug] Gateway: Heartbeat Started
+01:05:11 [Debug] Gateway: Sent Heartbeat
+01:05:11 [Debug] Gateway: Received Dispatch (READY)
+01:05:11 [Debug] Gateway: GuildDownloader Started
+01:05:11 [Debug] Gateway: Sending Status
+01:05:11 [Debug] Gateway: Sent StatusUpdate
+01:05:11 [Info] Gateway: Connected
+01:05:11 [Debug] Gateway: Raising Event
+01:05:11 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:05:12 [Verbose] Gateway: Connected to TL Soku
+01:05:12 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:05:12 [Verbose] Gateway: Connected to Ottawa Anime Crew
+01:05:12 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:05:12 [Verbose] Gateway: Connected to Haunted Mansion
+01:05:12 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:05:12 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+01:05:12 [Debug] Gateway: Received HeartbeatAck
+01:05:12 [Debug] Gateway: Latency = 422 ms
+01:05:12 [Debug] Gateway: GuildDownloader Stopped
+01:05:12 [Info] Gateway: Ready
+01:05:13 [Debug] Gateway: Received Dispatch (TYPING_START)
+01:05:20 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+01:05:28 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+01:05:31 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Discord.Rest.UserHelper.<AddRolesAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DiscordMusicBot.DiscordEventHandlers.<OnMessageReceivedAsync>d__10.MoveNext() in C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\DiscordEventHandlers.cs:line 60
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.EventExtensions.<InvokeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__128.MoveNext()
+01:05:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+01:05:48 [Debug] Gateway: Received Dispatch (TYPING_START)
+01:05:51 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+01:05:52 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+01:05:53 [Debug] Gateway: Sent Heartbeat
+01:13:54 [Info] Discord: Discord.Net v1.0.2 (API v6)
+01:13:54 [Verbose] Rest: GET voice/regions: 384.39 ms
+01:13:55 [Info] Gateway: Connecting
+01:13:55 [Debug] Gateway: Connecting ApiClient
+01:13:55 [Debug] Command: Successfully built 0 modules.
+01:13:55 [Verbose] Rest: GET gateway: 43.3 ms
+01:13:55 [Debug] Gateway: Identifying
+01:13:55 [Debug] Gateway: Sent Identify
+01:13:55 [Debug] Gateway: Received Hello
+01:13:55 [Debug] Gateway: Heartbeat Started
+01:13:55 [Debug] Gateway: Sent Heartbeat
+01:13:55 [Debug] Gateway: Received HeartbeatAck
+01:13:55 [Debug] Gateway: Latency = 62 ms
+01:13:55 [Debug] Gateway: Received Dispatch (READY)
+01:13:55 [Debug] Gateway: GuildDownloader Started
+01:13:55 [Debug] Gateway: Sending Status
+01:13:55 [Debug] Gateway: Sent StatusUpdate
+01:13:55 [Info] Gateway: Connected
+01:13:55 [Debug] Gateway: Raising Event
+01:13:55 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:13:55 [Verbose] Gateway: Connected to TL Soku
+01:13:55 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:13:55 [Verbose] Gateway: Connected to Haunted Mansion
+01:13:55 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:13:55 [Verbose] Gateway: Connected to Ottawa Anime Crew
+01:13:55 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+01:13:55 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+01:13:56 [Debug] Gateway: GuildDownloader Stopped
+01:13:56 [Info] Gateway: Ready
+01:14:00 [Debug] Gateway: Received Dispatch (TYPING_START)
+01:14:01 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+01:14:01 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+01:14:01 [Debug] Gateway: Sent VoiceStateUpdate
+01:14:01 [Debug] Gateway: Sent VoiceStateUpdate
+01:14:04 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.

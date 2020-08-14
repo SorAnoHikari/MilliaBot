@@ -12,21 +12,6 @@ namespace DiscordMusicBot
     {
         static Random RNG = new Random();
 
-        public enum FaustItem
-        {
-            Helium,
-            Platform,
-            Weight,
-            BlackHole,
-            Meteor,
-            Oil,
-            Food,
-            Poison,
-            Bomb,
-            Hammer,
-            MiniFaust
-        }
-
         public static List<string> EightBallResponses = new List<string>
         {
             "It is certain",
@@ -55,7 +40,8 @@ namespace DiscordMusicBot
         {
             new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/1/13/GGXRD_Faust_BlackHole.png", 4),
             new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/5/59/GGXRD_Faust_Bomb.png", 18.4),
-            new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/a/ad/GGXRD_Faust_Donut.png", 36.3),
+            new KeyValuePair<string, double>("http://i.imgur.com/BoIOkfd.png", 26.7),
+            new KeyValuePair<string, double>("http://i.imgur.com/CKuIDy4.png", 36.3),
             new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/6/66/GGXRD_Faust_Hammer.png", 52.9),
             new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/9/98/GGXRD_Faust_HeliumGas.png", 55.3),
             new KeyValuePair<string, double>("http://www.dustloop.com/wiki/images/8/89/GGXRD_Faust_Meteors.png", 60.8),
@@ -124,11 +110,11 @@ namespace DiscordMusicBot
         {
             Random r = new Random();
             double itemRoll = r.NextDouble() * 100;
-            double cumulative = 0.0;
+            double currVal = 0.0;
             for (int i = 0; i < ItemList.Count; i++)
             {
-                cumulative += ItemList[i].Value;
-                if (itemRoll < cumulative)
+                currVal = ItemList[i].Value;
+                if (itemRoll < currVal)
                 {
                     return ItemList[i].Key;
                 }

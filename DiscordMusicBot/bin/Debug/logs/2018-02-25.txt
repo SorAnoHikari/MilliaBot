@@ -1,0 +1,203 @@
+03:30:24 [Info] Discord: Discord.Net v1.0.2 (API v6)
+03:30:25 [Verbose] Rest: GET voice/regions: 341.35 ms
+03:30:25 [Info] Gateway: Connecting
+03:30:25 [Debug] Gateway: Connecting ApiClient
+03:30:25 [Debug] Command: Successfully built 0 modules.
+03:30:25 [Verbose] Rest: GET gateway: 141.62 ms
+03:30:26 [Debug] Gateway: Received Hello
+03:30:26 [Debug] Gateway: Heartbeat Started
+03:30:27 [Debug] Gateway: Identifying
+03:30:27 [Debug] Gateway: Sent Heartbeat
+03:30:27 [Debug] Gateway: Sent Identify
+03:30:27 [Debug] Gateway: Received HeartbeatAck
+03:30:27 [Debug] Gateway: Latency = 109 ms
+03:30:27 [Debug] Gateway: Received Dispatch (READY)
+03:30:27 [Debug] Gateway: GuildDownloader Started
+03:30:27 [Debug] Gateway: Sending Status
+03:30:27 [Debug] Gateway: Sent StatusUpdate
+03:30:27 [Info] Gateway: Connected
+03:30:27 [Debug] Gateway: Raising Event
+03:30:27 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:30:27 [Verbose] Gateway: Connected to TL Soku
+03:30:27 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:30:27 [Verbose] Gateway: Connected to Haunted Mansion
+03:30:27 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:30:27 [Verbose] Gateway: Connected to Ottawa Anime Crew
+03:30:27 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:30:27 [Verbose] Gateway: Connected to Ottawa Anime Crew (After hours)
+03:30:27 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+03:30:27 [Verbose] Gateway: Connected to Ottawa Traditional Fighters
+03:30:27 [Debug] Gateway: GuildDownloader Stopped
+03:30:27 [Info] Gateway: Ready
+03:30:28 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:30:37 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:30:37 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+03:30:37 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:30:47 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+03:30:47 [Warning] Gateway: Discord.Net.HttpException: The server responded with error 50005: Cannot edit a message authored by another user
+   at Discord.Net.Queue.RequestBucket.<SendAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Net.Queue.RequestQueue.<SendAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendInternalAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendJsonAsync>d__59`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<ModifyMessageAsync>d__83.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Rest.MessageHelper.<ModifyAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DiscordMusicBot.DiscordEventHandlers.<OnMessageReceivedAsync>d__10.MoveNext() in C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\DiscordEventHandlers.cs:line 49
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.EventExtensions.<InvokeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__128.MoveNext()
+03:30:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:05 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:31:05 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+03:31:05 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:31:06 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:06 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:08 [Debug] Gateway: Sent Heartbeat
+03:31:08 [Debug] Gateway: Received HeartbeatAck
+03:31:08 [Debug] Gateway: Latency = 94 ms
+03:31:10 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:31:10 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:31:25 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:31 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:31:33 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:31:35 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:31:39 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:39 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:39 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:31:43 [Debug] Gateway: Received Dispatch (MESSAGE_DELETE)
+03:31:46 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:31:46 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:31:47 [Debug] Gateway: Received Dispatch (MESSAGE_DELETE)
+03:31:49 [Debug] Gateway: Sent Heartbeat
+03:31:49 [Debug] Gateway: Received HeartbeatAck
+03:31:49 [Debug] Gateway: Latency = 78 ms
+03:31:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:32:01 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:32:03 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:32:09 [Debug] Gateway: Received Dispatch (GUILD_ROLE_UPDATE)
+03:32:18 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:32:20 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:32:21 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:32:26 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:32:30 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:32:30 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:32:30 [Debug] Gateway: Received Dispatch (VOICE_STATE_UPDATE)
+03:32:30 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:32:30 [Debug] Gateway: Sent Heartbeat
+03:32:30 [Debug] Gateway: Received HeartbeatAck
+03:32:30 [Debug] Gateway: Latency = 78 ms
+03:32:48 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:12 [Debug] Gateway: Sent Heartbeat
+03:33:12 [Debug] Gateway: Received HeartbeatAck
+03:33:12 [Debug] Gateway: Latency = 78 ms
+03:33:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:26 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:44 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:33:44 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:33:49 [Debug] Gateway: Received Dispatch (MESSAGE_UPDATE)
+03:33:49 [Debug] Gateway: Ignored Dispatch (CHANNEL_PINS_UPDATE)
+03:33:52 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:52 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:53 [Debug] Gateway: Sent Heartbeat
+03:33:54 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:54 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:33:54 [Debug] Gateway: Received HeartbeatAck
+03:33:54 [Debug] Gateway: Latency = 1156 ms
+03:33:56 [Debug] Gateway: Received Dispatch (MESSAGE_DELETE)
+03:34:01 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:34:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:24 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:34:34 [Debug] Gateway: Sent Heartbeat
+03:34:34 [Debug] Gateway: Received HeartbeatAck
+03:34:34 [Debug] Gateway: Latency = 79 ms
+03:34:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:41 [Debug] Gateway: Received Dispatch (TYPING_START)
+03:34:41 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+03:34:56 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+03:34:56 [Warning] Gateway: Discord.Net.HttpException: The server responded with error 50005: Cannot edit a message authored by another user
+   at Discord.Net.Queue.RequestBucket.<SendAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Net.Queue.RequestQueue.<SendAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendInternalAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<SendJsonAsync>d__59`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.API.DiscordRestApiClient.<ModifyMessageAsync>d__83.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.Rest.MessageHelper.<ModifyAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DiscordMusicBot.DiscordEventHandlers.<OnMessageReceivedAsync>d__10.MoveNext() in C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\DiscordEventHandlers.cs:line 49
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.EventExtensions.<InvokeAsync>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__128.MoveNext()
+03:34:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:34:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:15 [Debug] Gateway: Sent Heartbeat
+03:35:15 [Debug] Gateway: Received HeartbeatAck
+03:35:15 [Debug] Gateway: Latency = 63 ms
+03:35:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:26 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:35:57 [Debug] Gateway: Sent Heartbeat
+03:35:57 [Debug] Gateway: Received HeartbeatAck
+03:35:57 [Debug] Gateway: Latency = 78 ms
+03:36:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+03:36:13 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)

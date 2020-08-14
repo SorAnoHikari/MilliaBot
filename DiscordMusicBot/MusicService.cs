@@ -13,7 +13,7 @@ namespace DiscordMusicBot
 {
     public static class MusicService
     {
-        public static async Task ExecutePlaylist(IAudioClient voiceClient, List<string> playlist, Channel jamSessionChatChannel)
+        /*public static async Task ExecutePlaylist(IAudioClient voiceClient, List<string> playlist, Channel jamSessionChatChannel)
         {
             while (playlist.Count > 0)
             {
@@ -26,7 +26,7 @@ namespace DiscordMusicBot
                 cmdProcess.StartInfo.RedirectStandardInput = true;
                 cmdProcess.Start();
 
-                /* Change for local/prod */
+                /* Change for local/prod #1#
                 //cmdProcess.StandardInput.WriteLine(@"del C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\bin\assets\current.mp3");
                 cmdProcess.StandardInput.WriteLine(@"del C:\MilliaBot\MilliaBot\assets\current.mp3");
 
@@ -70,18 +70,18 @@ namespace DiscordMusicBot
             int blockSize = 3840; // 1920 for mono
             byte[] buffer = new byte[blockSize];
             int read;
-            while (!MilliaBot.IsSkipSong)
+            while (!DiscordEventHandlers.IsSkipSong)
             {
                 read = p.StandardOutput.BaseStream.Read(buffer, 0, blockSize);
-                if (read == 0 || MilliaBot.IsSkipSong)
+                if (read == 0 || DiscordEventHandlers.IsSkipSong)
                 {
-                    MilliaBot.IsSkipSong = false;
+                    DiscordEventHandlers.IsSkipSong = false;
                     await Task.Delay(1000);
                     break; //nothing to read
                 }
                 voiceClient.Send(buffer, 0, read);
             }
             voiceClient.Wait();
-        }
+        }*/
     }
 }

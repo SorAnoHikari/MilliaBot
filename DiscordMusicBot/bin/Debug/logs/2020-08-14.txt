@@ -1,0 +1,1016 @@
+06:37:36 [Info] Discord: Discord.Net v1.0.2 (API v6)
+06:37:37 [Verbose] Rest: GET voice/regions: 453.97 ms
+06:37:37 [Info] Gateway: Connecting
+06:37:37 [Debug] Command: Successfully built 0 modules.
+06:37:52 [Verbose] Rest: GET gateway: 72.16 ms
+06:37:52 [Debug] Gateway: Identifying
+06:37:52 [Debug] Gateway: Sent Identify
+06:37:52 [Debug] Gateway: Received Hello
+06:37:52 [Debug] Gateway: Heartbeat Started
+06:37:52 [Debug] Gateway: Sent Heartbeat
+06:37:52 [Debug] Gateway: Received HeartbeatAck
+06:37:52 [Debug] Gateway: Latency = 125 ms
+06:37:52 [Debug] Gateway: Received Dispatch (READY)
+06:37:52 [Debug] Gateway: GuildDownloader Started
+06:37:52 [Debug] Gateway: Sending Status
+06:37:52 [Debug] Gateway: Sent StatusUpdate
+06:37:52 [Info] Gateway: Connected
+06:37:52 [Debug] Gateway: Raising Event
+06:37:52 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:52 [Verbose] Gateway: Connected to TL Soku
+06:37:52 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:52 [Verbose] Gateway: Connected to Ottawa FGC
+06:37:52 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:53 [Verbose] Gateway: Connected to Haunted Mansion
+06:37:53 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:53 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+06:37:53 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:53 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+06:37:53 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:53 [Verbose] Gateway: Connected to Ottawa Kool Kids
+06:37:53 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:37:53 [Verbose] Gateway: Connected to The Kitchen
+06:37:53 [Debug] Gateway: GuildDownloader Stopped
+06:37:53 [Info] Gateway: Ready
+06:37:53 [Debug] Gateway: Received Dispatch (TYPING_START)
+06:37:54 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:37:54 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+06:37:55 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:37:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:37:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:37:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:01 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+06:38:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:04 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:28 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:28 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:33 [Debug] Gateway: Sent Heartbeat
+06:38:34 [Debug] Gateway: Received HeartbeatAck
+06:38:34 [Debug] Gateway: Latency = 125 ms
+06:38:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:38:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:30 [Info] Discord: Discord.Net v1.0.2 (API v6)
+06:41:30 [Verbose] Rest: GET voice/regions: 399.41 ms
+06:41:30 [Info] Gateway: Connecting
+06:41:30 [Debug] Gateway: Connecting ApiClient
+06:41:33 [Verbose] Rest: GET gateway: 62.37 ms
+06:41:34 [Debug] Gateway: Identifying
+06:41:34 [Debug] Gateway: Sent Identify
+06:41:34 [Debug] Gateway: Received Hello
+06:41:34 [Debug] Gateway: Heartbeat Started
+06:41:34 [Debug] Gateway: Sent Heartbeat
+06:41:34 [Debug] Gateway: Received HeartbeatAck
+06:41:34 [Debug] Gateway: Latency = 141 ms
+06:41:34 [Debug] Gateway: Received Dispatch (READY)
+06:41:34 [Debug] Gateway: GuildDownloader Started
+06:41:34 [Debug] Gateway: Sending Status
+06:41:34 [Debug] Gateway: Sent StatusUpdate
+06:41:34 [Info] Gateway: Connected
+06:41:34 [Debug] Gateway: Raising Event
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to TL Soku
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to Haunted Mansion
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to Ottawa FGC
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to Ottawa Kool Kids
+06:41:35 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:41:35 [Verbose] Gateway: Connected to The Kitchen
+06:41:35 [Debug] Gateway: GuildDownloader Stopped
+06:41:35 [Info] Gateway: Ready
+06:41:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:41:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:04 [Info] Discord: Discord.Net v1.0.2 (API v6)
+06:42:04 [Verbose] Rest: GET voice/regions: 401 ms
+06:42:05 [Info] Gateway: Connecting
+06:42:05 [Debug] Command: Successfully built 0 modules.
+06:42:05 [Debug] Gateway: Connecting ApiClient
+06:42:05 [Verbose] Rest: GET gateway: 68.32 ms
+06:42:05 [Debug] Gateway: Identifying
+06:42:05 [Debug] Gateway: Sent Identify
+06:42:05 [Debug] Gateway: Received Hello
+06:42:05 [Debug] Gateway: Heartbeat Started
+06:42:05 [Debug] Gateway: Sent Heartbeat
+06:42:05 [Debug] Gateway: Received HeartbeatAck
+06:42:05 [Debug] Gateway: Latency = 125 ms
+06:42:05 [Debug] Gateway: Received Dispatch (READY)
+06:42:05 [Debug] Gateway: GuildDownloader Started
+06:42:05 [Debug] Gateway: Sending Status
+06:42:05 [Debug] Gateway: Sent StatusUpdate
+06:42:05 [Info] Gateway: Connected
+06:42:05 [Debug] Gateway: Raising Event
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to Ottawa FGC
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to Haunted Mansion
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to TL Soku
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to Ottawa Kool Kids
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to The Kitchen
+06:42:06 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:42:06 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+06:42:06 [Debug] Gateway: GuildDownloader Stopped
+06:42:06 [Info] Gateway: Ready
+06:42:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:29 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:39 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:45 [Debug] Gateway: Received Dispatch (TYPING_START)
+06:42:46 [Debug] Gateway: Sent Heartbeat
+06:42:47 [Debug] Gateway: Received HeartbeatAck
+06:42:47 [Debug] Gateway: Latency = 125 ms
+06:42:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:48 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:51 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+06:42:52 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (TYPING_START)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:42:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:02 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+06:43:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:03 [Debug] Gateway: Received Dispatch (TYPING_START)
+06:43:06 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+06:43:17 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:17 [Debug] Gateway: Received Dispatch (TYPING_START)
+06:43:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:18 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:18 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:19 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+06:43:25 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+06:59:54 [Info] Discord: Discord.Net v1.0.2 (API v6)
+06:59:55 [Verbose] Rest: GET voice/regions: 391.96 ms
+06:59:55 [Info] Gateway: Connecting
+06:59:55 [Debug] Command: Successfully built 0 modules.
+06:59:55 [Debug] Gateway: Connecting ApiClient
+06:59:55 [Verbose] Rest: GET gateway: 63.95 ms
+06:59:55 [Debug] Gateway: Identifying
+06:59:55 [Debug] Gateway: Sent Identify
+06:59:55 [Debug] Gateway: Received Hello
+06:59:55 [Debug] Gateway: Heartbeat Started
+06:59:55 [Debug] Gateway: Sent Heartbeat
+06:59:56 [Debug] Gateway: Received HeartbeatAck
+06:59:56 [Debug] Gateway: Latency = 125 ms
+06:59:56 [Debug] Gateway: Received Dispatch (READY)
+06:59:56 [Debug] Gateway: GuildDownloader Started
+06:59:56 [Debug] Gateway: Sending Status
+06:59:56 [Debug] Gateway: Sent StatusUpdate
+06:59:56 [Info] Gateway: Connected
+06:59:56 [Debug] Gateway: Raising Event
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to TL Soku
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to Haunted Mansion
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to Ottawa FGC
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to Ottawa Kool Kids
+06:59:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+06:59:56 [Verbose] Gateway: Connected to The Kitchen
+06:59:56 [Debug] Gateway: GuildDownloader Stopped
+06:59:56 [Info] Gateway: Ready
+06:59:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:06 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:09 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+07:00:10 [Verbose] Rest: GET channels/743895616890863717/messages/743896778163617802: 231.9 ms
+07:00:10 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:10 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:11 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:19 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:22 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+07:00:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:29 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+07:00:29 [Verbose] Rest: GET channels/743895616890863717/messages/743896778163617802: 124.48 ms
+07:00:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:37 [Debug] Gateway: Sent Heartbeat
+07:00:37 [Debug] Gateway: Received HeartbeatAck
+07:00:37 [Debug] Gateway: Latency = 156 ms
+07:00:37 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+07:00:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:46 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+07:00:47 [Verbose] Rest: GET channels/743895616890863717/messages/743896778163617802: 153.21 ms
+07:00:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:48 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:52 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+07:00:52 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:55 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:00:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:01:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:19 [Info] Discord: Discord.Net v1.0.2 (API v6)
+07:02:19 [Verbose] Rest: GET voice/regions: 415.23 ms
+07:02:19 [Info] Gateway: Connecting
+07:02:19 [Debug] Command: Successfully built 0 modules.
+07:02:19 [Debug] Gateway: Connecting ApiClient
+07:02:19 [Verbose] Rest: GET gateway: 60.79 ms
+07:02:20 [Debug] Gateway: Identifying
+07:02:20 [Debug] Gateway: Sent Identify
+07:02:20 [Debug] Gateway: Received Hello
+07:02:20 [Debug] Gateway: Heartbeat Started
+07:02:20 [Debug] Gateway: Sent Heartbeat
+07:02:20 [Debug] Gateway: Received HeartbeatAck
+07:02:20 [Debug] Gateway: Latency = 125 ms
+07:02:20 [Debug] Gateway: Received Dispatch (READY)
+07:02:20 [Debug] Gateway: GuildDownloader Started
+07:02:20 [Debug] Gateway: Sending Status
+07:02:20 [Debug] Gateway: Sent StatusUpdate
+07:02:20 [Info] Gateway: Connected
+07:02:20 [Debug] Gateway: Raising Event
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to TL Soku
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to Haunted Mansion
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to Ottawa FGC
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to Ottawa Kool Kids
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+07:02:20 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+07:02:20 [Verbose] Gateway: Connected to The Kitchen
+07:02:20 [Debug] Gateway: GuildDownloader Stopped
+07:02:20 [Info] Gateway: Ready
+07:02:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:24 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+07:02:24 [Verbose] Rest: GET channels/743895616890863717/messages/743896778163617802: 127.81 ms
+07:02:42 [Warning] Gateway: A ReactionAdded handler is blocking the gateway task.
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:45 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:52 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:54 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:55 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:57 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:02:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:03:01 [Debug] Gateway: Sent Heartbeat
+07:03:01 [Debug] Gateway: Received HeartbeatAck
+07:03:01 [Debug] Gateway: Latency = 125 ms
+07:03:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+07:03:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:24 [Info] Discord: Discord.Net v1.0.2 (API v6)
+08:28:24 [Verbose] Rest: GET voice/regions: 447.99 ms
+08:28:24 [Info] Gateway: Connecting
+08:28:24 [Debug] Command: Successfully built 0 modules.
+08:28:24 [Debug] Gateway: Connecting ApiClient
+08:28:24 [Verbose] Rest: GET gateway: 41.9 ms
+08:28:25 [Debug] Gateway: Identifying
+08:28:25 [Debug] Gateway: Sent Identify
+08:28:25 [Debug] Gateway: Received Hello
+08:28:25 [Debug] Gateway: Heartbeat Started
+08:28:25 [Debug] Gateway: Sent Heartbeat
+08:28:25 [Debug] Gateway: Received HeartbeatAck
+08:28:25 [Debug] Gateway: Latency = 63 ms
+08:28:25 [Debug] Gateway: Received Dispatch (READY)
+08:28:25 [Debug] Gateway: GuildDownloader Started
+08:28:25 [Debug] Gateway: Sending Status
+08:28:25 [Debug] Gateway: Sent StatusUpdate
+08:28:25 [Info] Gateway: Connected
+08:28:25 [Debug] Gateway: Raising Event
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to TL Soku
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to Ottawa FGC
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to Haunted Mansion
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to Ottawa Kool Kids
+08:28:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:28:25 [Verbose] Gateway: Connected to The Kitchen
+08:28:25 [Debug] Gateway: GuildDownloader Stopped
+08:28:25 [Info] Gateway: Ready
+08:28:26 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:28:26 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:28:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:31 [Debug] Gateway: Received Dispatch (VOICE_STATE_UPDATE)
+08:28:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:43 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:44 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:48 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:54 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:28:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:28:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:03 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:29:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:06 [Debug] Gateway: Sent Heartbeat
+08:29:06 [Debug] Gateway: Received HeartbeatAck
+08:29:06 [Debug] Gateway: Latency = 62 ms
+08:29:06 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:08 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:29:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:13 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:14 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:29:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:18 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:19 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:29:26 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:29:26 [Verbose] Rest: GET channels/743895616890863717/messages/743896729090523246: 189.42 ms
+08:43:18 [Info] Discord: Discord.Net v1.0.2 (API v6)
+08:43:18 [Verbose] Rest: GET voice/regions: 330.9 ms
+08:43:18 [Info] Gateway: Connecting
+08:43:18 [Debug] Command: Successfully built 0 modules.
+08:43:18 [Debug] Gateway: Connecting ApiClient
+08:43:18 [Verbose] Rest: GET gateway: 38.32 ms
+08:43:19 [Debug] Gateway: Identifying
+08:43:19 [Debug] Gateway: Sent Identify
+08:43:19 [Debug] Gateway: Received Hello
+08:43:19 [Debug] Gateway: Heartbeat Started
+08:43:19 [Debug] Gateway: Sent Heartbeat
+08:43:19 [Debug] Gateway: Received HeartbeatAck
+08:43:19 [Debug] Gateway: Latency = 78 ms
+08:43:19 [Debug] Gateway: Received Dispatch (READY)
+08:43:19 [Debug] Gateway: GuildDownloader Started
+08:43:19 [Debug] Gateway: Sending Status
+08:43:19 [Debug] Gateway: Sent StatusUpdate
+08:43:19 [Info] Gateway: Connected
+08:43:19 [Debug] Gateway: Raising Event
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to Haunted Mansion
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to TL Soku
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to Ottawa FGC
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to Ottawa Kool Kids
+08:43:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:43:19 [Verbose] Gateway: Connected to The Kitchen
+08:43:20 [Debug] Gateway: GuildDownloader Stopped
+08:43:20 [Info] Gateway: Ready
+08:43:20 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:26 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:43:26 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 105.94 ms
+08:43:29 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:30 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:43:30 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:37 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:43:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:39 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:43:42 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:43:44 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:43:44 [Verbose] Rest: GET channels/743931336066072668/messages/743931768029184140: 111.49 ms
+08:43:50 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:43:51 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:43:52 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:43:53 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+08:43:53 [Verbose] Rest: GET channels/743931336066072668/messages/743931768029184140: 90.54 ms
+08:43:56 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:43:57 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:43:57 [Verbose] Rest: GET channels/743931336066072668/messages/743931768029184140: 99.64 ms
+08:43:58 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:44:00 [Debug] Gateway: Sent Heartbeat
+08:44:00 [Debug] Gateway: Received HeartbeatAck
+08:44:00 [Debug] Gateway: Latency = 125 ms
+08:44:01 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:01 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:07 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:44:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:09 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:44:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:14 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:16 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:44:20 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:44:20 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:25 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:28 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:44:28 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:44:31 [Warning] Gateway: A ReactionAdded handler is blocking the gateway task.
+08:44:32 [Verbose] Rest: GET channels/743931336066072668/messages/743931674592673873: 112.56 ms
+08:44:35 [Warning] Gateway: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Discord.Commands.SocketCommandContext..ctor(DiscordSocketClient client, SocketUserMessage msg)
+   at DiscordMusicBot.DiscordEventHandlers.<HandleReactionAddedAsync>d__10.MoveNext() in C:\Users\Tony\Desktop\Misc\DiscordBot\DiscordMusicBot\DiscordMusicBot\DiscordEventHandlers.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.EventExtensions.<InvokeAsync>d__3`3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__128.MoveNext()
+08:44:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:35 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:39 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:42 [Debug] Gateway: Sent Heartbeat
+08:44:42 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:44 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:44:45 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:44:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:46 [Debug] Gateway: Received HeartbeatAck
+08:44:46 [Debug] Gateway: Latency = 4578 ms
+08:44:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:49 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:44:52 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:44:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:45:07 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:45:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:45:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:45:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:45:07 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:45:07 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:55:23 [Info] Discord: Discord.Net v1.0.2 (API v6)
+08:55:24 [Verbose] Rest: GET voice/regions: 316.01 ms
+08:55:24 [Info] Gateway: Connecting
+08:55:24 [Debug] Command: Successfully built 0 modules.
+08:55:24 [Debug] Gateway: Connecting ApiClient
+08:55:24 [Verbose] Rest: GET gateway: 73.25 ms
+08:55:24 [Debug] Gateway: Identifying
+08:55:24 [Debug] Gateway: Sent Identify
+08:55:24 [Debug] Gateway: Received Hello
+08:55:24 [Debug] Gateway: Heartbeat Started
+08:55:24 [Debug] Gateway: Sent Heartbeat
+08:55:24 [Debug] Gateway: Received HeartbeatAck
+08:55:24 [Debug] Gateway: Latency = 78 ms
+08:55:24 [Debug] Gateway: Received Dispatch (READY)
+08:55:24 [Debug] Gateway: GuildDownloader Started
+08:55:24 [Debug] Gateway: Sending Status
+08:55:24 [Debug] Gateway: Sent StatusUpdate
+08:55:24 [Info] Gateway: Connected
+08:55:24 [Debug] Gateway: Raising Event
+08:55:24 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:24 [Verbose] Gateway: Connected to TL Soku
+08:55:24 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:24 [Verbose] Gateway: Connected to Ottawa FGC
+08:55:24 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:24 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+08:55:24 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:25 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+08:55:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:25 [Verbose] Gateway: Connected to The Kitchen
+08:55:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:25 [Verbose] Gateway: Connected to Ottawa Kool Kids
+08:55:25 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:55:25 [Verbose] Gateway: Connected to Haunted Mansion
+08:55:25 [Debug] Gateway: GuildDownloader Stopped
+08:55:25 [Info] Gateway: Ready
+08:55:26 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:30 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:55:30 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 163.66 ms
+08:55:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:38 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:41 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:44 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:44 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+08:55:44 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 132.11 ms
+08:55:45 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:46 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:55:48 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:55:48 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 182.84 ms
+08:55:52 [Warning] Gateway: A ReactionAdded handler is blocking the gateway task.
+08:56:20 [Info] Discord: Discord.Net v1.0.2 (API v6)
+08:56:21 [Verbose] Rest: GET voice/regions: 340.33 ms
+08:56:21 [Info] Gateway: Connecting
+08:56:21 [Debug] Command: Successfully built 0 modules.
+08:56:21 [Debug] Gateway: Connecting ApiClient
+08:56:21 [Verbose] Rest: GET gateway: 45.74 ms
+08:56:21 [Debug] Gateway: Identifying
+08:56:21 [Debug] Gateway: Sent Identify
+08:56:21 [Debug] Gateway: Received Hello
+08:56:21 [Debug] Gateway: Heartbeat Started
+08:56:21 [Debug] Gateway: Sent Heartbeat
+08:56:21 [Debug] Gateway: Received HeartbeatAck
+08:56:21 [Debug] Gateway: Latency = 78 ms
+08:56:21 [Debug] Gateway: Received Dispatch (READY)
+08:56:22 [Debug] Gateway: GuildDownloader Started
+08:56:22 [Debug] Gateway: Sending Status
+08:56:22 [Debug] Gateway: Sent StatusUpdate
+08:56:22 [Info] Gateway: Connected
+08:56:22 [Debug] Gateway: Raising Event
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to TL Soku
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to Haunted Mansion
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to Ottawa FGC
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to Ottawa Kool Kids
+08:56:22 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+08:56:22 [Verbose] Gateway: Connected to The Kitchen
+08:56:22 [Debug] Gateway: GuildDownloader Stopped
+08:56:22 [Info] Gateway: Ready
+08:56:23 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:25 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:56:26 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:56:26 [Verbose] Rest: GET channels/743931336066072668/messages/743931768029184140: 117.24 ms
+08:56:29 [Warning] Gateway: A ReactionAdded handler is blocking the gateway task.
+08:56:34 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743887422068228107: 117.28 ms
+08:56:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:34 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:56:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:34 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+08:56:35 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:56:37 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:39 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+08:56:39 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:56:45 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:56:45 [Verbose] Rest: GET channels/743931336066072668/messages/743931727461875812: 175.62 ms
+08:56:45 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743887045247631360: 96.45 ms
+08:56:45 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:45 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+08:56:47 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:47 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:56:48 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:56:48 [Verbose] Rest: GET channels/743931336066072668/messages/743931727461875812: 232.71 ms
+08:56:48 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743886987676614807: 114.46 ms
+08:56:48 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+08:56:50 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+08:56:50 [Verbose] Rest: GET channels/743931336066072668/messages/743931674592673873: 143.11 ms
+08:56:51 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743886874975797311: 129.62 ms
+08:56:51 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:51 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:51 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+08:56:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:53 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:53 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:56:54 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:56:59 [Debug] Gateway: Received Dispatch (TYPING_START)
+08:57:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:02 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+08:57:03 [Debug] Gateway: Sent Heartbeat
+08:57:03 [Debug] Gateway: Received HeartbeatAck
+08:57:03 [Debug] Gateway: Latency = 78 ms
+08:57:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:06 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:08 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:13 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+08:57:17 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:08:55 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:08:55 [Verbose] Rest: GET voice/regions: 332.52 ms
+09:08:56 [Info] Gateway: Connecting
+09:08:56 [Debug] Command: Successfully built 0 modules.
+09:08:56 [Debug] Gateway: Connecting ApiClient
+09:08:56 [Verbose] Rest: GET gateway: 42.44 ms
+09:08:56 [Debug] Gateway: Identifying
+09:08:56 [Debug] Gateway: Sent Identify
+09:08:56 [Debug] Gateway: Received Hello
+09:08:56 [Debug] Gateway: Heartbeat Started
+09:08:56 [Debug] Gateway: Sent Heartbeat
+09:08:56 [Debug] Gateway: Received Dispatch (READY)
+09:08:56 [Debug] Gateway: GuildDownloader Started
+09:08:56 [Debug] Gateway: Sending Status
+09:08:56 [Debug] Gateway: Sent StatusUpdate
+09:08:56 [Info] Gateway: Connected
+09:08:56 [Debug] Gateway: Raising Event
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to TL Soku
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to Haunted Mansion
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to Ottawa FGC
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to The Kitchen
+09:08:56 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:08:56 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:08:56 [Debug] Gateway: Received HeartbeatAck
+09:08:56 [Debug] Gateway: Latency = 313 ms
+09:08:56 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:08:57 [Debug] Gateway: GuildDownloader Stopped
+09:08:57 [Info] Gateway: Ready
+09:08:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:08:58 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:08:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:08:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:00 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:02 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:03 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+09:09:03 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 147.58 ms
+09:09:03 [Verbose] Rest: DELETE guilds/139393601045004288/members/111943494632751104/roles/743937670618808421: 90.89 ms
+09:09:06 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+09:09:06 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 97.21 ms
+09:09:06 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743937670618808421: 105.41 ms
+09:09:06 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:10 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:11 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+09:09:11 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 115.44 ms
+09:09:11 [Verbose] Rest: DELETE guilds/139393601045004288/members/111943494632751104/roles/743937670618808421: 103.27 ms
+09:09:11 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:11 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:12 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:13 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+09:09:14 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 104.43 ms
+09:09:14 [Verbose] Rest: DELETE guilds/139393601045004288/members/111943494632751104/roles/743937714948276305: 102.25 ms
+09:09:17 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+09:09:17 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 112.62 ms
+09:09:17 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743937670618808421: 149.27 ms
+09:09:17 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:19 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+09:09:19 [Verbose] Rest: GET channels/743931336066072668/messages/743937989067014194: 129.54 ms
+09:09:19 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743937714948276305: 94.77 ms
+09:09:19 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:21 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:21 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:09:22 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:09:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:06 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:23:06 [Verbose] Rest: GET voice/regions: 354.95 ms
+09:23:07 [Info] Gateway: Connecting
+09:23:07 [Debug] Command: Successfully built 0 modules.
+09:23:07 [Debug] Gateway: Connecting ApiClient
+09:23:07 [Verbose] Rest: GET gateway: 40.97 ms
+09:23:07 [Debug] Gateway: Identifying
+09:23:07 [Debug] Gateway: Sent Identify
+09:23:07 [Debug] Gateway: Received Hello
+09:23:07 [Debug] Gateway: Heartbeat Started
+09:23:07 [Debug] Gateway: Sent Heartbeat
+09:23:07 [Debug] Gateway: Received HeartbeatAck
+09:23:07 [Debug] Gateway: Latency = 62 ms
+09:23:07 [Debug] Gateway: Received Dispatch (READY)
+09:23:07 [Debug] Gateway: GuildDownloader Started
+09:23:07 [Debug] Gateway: Sending Status
+09:23:07 [Debug] Gateway: Sent StatusUpdate
+09:23:07 [Info] Gateway: Connected
+09:23:07 [Debug] Gateway: Raising Event
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to TL Soku
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to Haunted Mansion
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to Ottawa FGC
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:23:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:23:07 [Verbose] Gateway: Connected to The Kitchen
+09:23:08 [Debug] Gateway: GuildDownloader Stopped
+09:23:08 [Info] Gateway: Ready
+09:23:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:13 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:19 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:23 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+09:23:23 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 167.99 ms
+09:23:24 [Verbose] Rest: DELETE guilds/139393601045004288/members/111943494632751104/roles/743936738736472194: 124.03 ms
+09:23:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:24 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:24 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:27 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+09:23:27 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 192.94 ms
+09:23:27 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743936738736472194: 152.64 ms
+09:23:27 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:27 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:29 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:30 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:31 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:23:32 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:32 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:33 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:33 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:34 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:23:35 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_REMOVE)
+09:23:35 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 110.11 ms
+09:23:35 [Verbose] Rest: DELETE guilds/139393601045004288/members/111943494632751104/roles/743936738736472194: 103.93 ms
+09:23:36 [Debug] Gateway: Received Dispatch (MESSAGE_REACTION_ADD)
+09:23:36 [Verbose] Rest: GET channels/743931336066072668/messages/743931754200694784: 133.02 ms
+09:23:36 [Verbose] Rest: PUT guilds/139393601045004288/members/111943494632751104/roles/743936738736472194: 111.93 ms
+09:23:36 [Debug] Gateway: Received Dispatch (GUILD_MEMBER_UPDATE)
+09:32:06 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:32:06 [Verbose] Rest: GET voice/regions: 328.09 ms
+09:32:06 [Info] Gateway: Connecting
+09:32:06 [Debug] Command: Successfully built 0 modules.
+09:32:06 [Debug] Gateway: Connecting ApiClient
+09:32:07 [Verbose] Rest: GET gateway: 146.8 ms
+09:32:07 [Debug] Gateway: Identifying
+09:32:07 [Debug] Gateway: Sent Identify
+09:32:07 [Debug] Gateway: Received Hello
+09:32:07 [Debug] Gateway: Heartbeat Started
+09:32:07 [Debug] Gateway: Sent Heartbeat
+09:32:07 [Debug] Gateway: Received Dispatch (READY)
+09:32:07 [Debug] Gateway: GuildDownloader Started
+09:32:07 [Debug] Gateway: Sending Status
+09:32:07 [Debug] Gateway: Sent StatusUpdate
+09:32:07 [Info] Gateway: Connected
+09:32:07 [Debug] Gateway: Raising Event
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to TL Soku
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to Ottawa FGC
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to Haunted Mansion
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:32:07 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:32:07 [Verbose] Gateway: Connected to The Kitchen
+09:32:07 [Debug] Gateway: Received HeartbeatAck
+09:32:07 [Debug] Gateway: Latency = 344 ms
+09:32:08 [Debug] Gateway: GuildDownloader Stopped
+09:32:08 [Info] Gateway: Ready
+09:35:18 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:35:18 [Verbose] Rest: GET voice/regions: 373.5 ms
+09:35:18 [Info] Gateway: Connecting
+09:35:18 [Debug] Command: Successfully built 0 modules.
+09:35:18 [Debug] Gateway: Connecting ApiClient
+09:35:18 [Verbose] Rest: GET gateway: 41.78 ms
+09:35:18 [Debug] Gateway: Identifying
+09:35:18 [Debug] Gateway: Sent Identify
+09:35:19 [Debug] Gateway: Received Hello
+09:35:19 [Debug] Gateway: Heartbeat Started
+09:35:19 [Debug] Gateway: Sent Heartbeat
+09:35:19 [Debug] Gateway: Received Dispatch (READY)
+09:35:19 [Debug] Gateway: GuildDownloader Started
+09:35:19 [Debug] Gateway: Sending Status
+09:35:19 [Debug] Gateway: Sent StatusUpdate
+09:35:19 [Info] Gateway: Connected
+09:35:19 [Debug] Gateway: Raising Event
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to TL Soku
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to Ottawa FGC
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to Haunted Mansion
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to The Kitchen
+09:35:19 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:19 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:35:19 [Debug] Gateway: Received HeartbeatAck
+09:35:19 [Debug] Gateway: Latency = 343 ms
+09:35:19 [Debug] Gateway: GuildDownloader Stopped
+09:35:19 [Info] Gateway: Ready
+09:35:21 [Debug] Gateway: Received Dispatch (TYPING_START)
+09:35:28 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:35:28 [Verbose] Rest: GET voice/regions: 307.9 ms
+09:35:28 [Info] Gateway: Connecting
+09:35:28 [Debug] Command: Successfully built 0 modules.
+09:35:28 [Debug] Gateway: Connecting ApiClient
+09:35:28 [Verbose] Rest: GET gateway: 44.35 ms
+09:35:28 [Debug] Gateway: Identifying
+09:35:29 [Debug] Gateway: Sent Identify
+09:35:29 [Debug] Gateway: Received Hello
+09:35:29 [Debug] Gateway: Heartbeat Started
+09:35:29 [Debug] Gateway: Sent Heartbeat
+09:35:29 [Debug] Gateway: Received HeartbeatAck
+09:35:29 [Debug] Gateway: Latency = 79 ms
+09:35:29 [Debug] Gateway: Received Dispatch (READY)
+09:35:29 [Debug] Gateway: GuildDownloader Started
+09:35:29 [Debug] Gateway: Sending Status
+09:35:29 [Debug] Gateway: Sent StatusUpdate
+09:35:29 [Info] Gateway: Connected
+09:35:29 [Debug] Gateway: Raising Event
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to TL Soku
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to Haunted Mansion
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to Ottawa FGC
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:35:29 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:29 [Verbose] Gateway: Connected to The Kitchen
+09:35:29 [Debug] Gateway: GuildDownloader Stopped
+09:35:29 [Info] Gateway: Ready
+09:35:30 [Debug] Gateway: Received Dispatch (TYPING_START)
+09:35:31 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:32 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+09:35:33 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:34 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:35 [Debug] Gateway: Received Dispatch (TYPING_START)
+09:35:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:36 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:37 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
+09:35:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:40 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:50 [Info] Discord: Discord.Net v1.0.2 (API v6)
+09:35:50 [Verbose] Rest: GET voice/regions: 306.61 ms
+09:35:50 [Info] Gateway: Connecting
+09:35:50 [Debug] Command: Successfully built 0 modules.
+09:35:50 [Debug] Gateway: Connecting ApiClient
+09:35:50 [Verbose] Rest: GET gateway: 41.4 ms
+09:35:51 [Debug] Gateway: Identifying
+09:35:51 [Debug] Gateway: Sent Identify
+09:35:51 [Debug] Gateway: Received Hello
+09:35:51 [Debug] Gateway: Heartbeat Started
+09:35:51 [Debug] Gateway: Sent Heartbeat
+09:35:51 [Debug] Gateway: Received HeartbeatAck
+09:35:51 [Debug] Gateway: Latency = 79 ms
+09:35:51 [Debug] Gateway: Received Dispatch (READY)
+09:35:51 [Debug] Gateway: GuildDownloader Started
+09:35:51 [Debug] Gateway: Sending Status
+09:35:51 [Debug] Gateway: Sent StatusUpdate
+09:35:51 [Info] Gateway: Connected
+09:35:51 [Debug] Gateway: Raising Event
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to TL Soku
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to Haunted Mansion
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to Ottawa FGC
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to Ottawa Degen After Hours
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to Ottawa Fighting Game General
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to Ottawa Kool Kids
+09:35:51 [Debug] Gateway: Received Dispatch (GUILD_AVAILABLE)
+09:35:51 [Verbose] Gateway: Connected to The Kitchen
+09:35:51 [Debug] Gateway: GuildDownloader Stopped
+09:35:52 [Info] Gateway: Ready
+09:35:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:35:59 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:01 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:03 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:09 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:10 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:11 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:15 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:21 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:32 [Debug] Gateway: Sent Heartbeat
+09:36:32 [Debug] Gateway: Received HeartbeatAck
+09:36:32 [Debug] Gateway: Latency = 63 ms
+09:36:32 [Debug] Gateway: Received Dispatch (TYPING_START)
+09:36:32 [Debug] Gateway: Received Dispatch (PRESENCE_UPDATE)
+09:36:32 [Debug] Gateway: Received Dispatch (CHANNEL_CREATE)
+09:36:32 [Debug] Gateway: Received Dispatch (MESSAGE_CREATE)
